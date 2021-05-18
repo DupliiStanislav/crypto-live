@@ -1,0 +1,19 @@
+
+<style>
+    .hello-msg{
+        font-size: 20px;
+        color: brown;
+        margin-right: 20px;
+    }
+</style>
+
+
+<span class="hello-msg">Hello, {{ request.user }} </span>
+<span class="hello-msg"><a href="{% url 'logout' %}"> Logout </a></span>
+
+
+<div>
+    {% for d in data %}
+    <p>{{d.name}} --- {{d.price}} USDT</p><br>
+    {% endfor %}
+</div>
